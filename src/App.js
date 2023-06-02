@@ -1,5 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import './main.css';
 
 
 const estilo2 = {
@@ -15,14 +16,18 @@ const estilo = ({ bg = '#733' }) => ({
 
 const Li = () => {
   return (
-    <li style={{ ...estilo2, ...estilo({ bg: "#533" }) }} className='clase-li'>valor de Li</li>
+    // <li style={{ ...estilo2, ...estilo({ bg: "#533" }) }} className='clase-li'>valor de Li</li>
+    <li className='clase-li'>valor de Li</li>
+
   )
 }
 
 const App = () => {
   const valor = 'medio medio'
   return (
-    <ul style={estilo({ bg: '#050' })} className="clase-css">
+    //<ul style={estilo({ bg: '#050' })} className="clase-css">
+    <ul className="clase-css">
+
       <Li></Li>
     </ul>
   );
