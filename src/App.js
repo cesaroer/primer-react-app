@@ -1,36 +1,12 @@
-import logo from './logo.svg';
-//import './App.css';
-import './main.css';
-
-
-const estilo2 = {
-  boxShadow: '0 5px 3px rgba(0,0,0,0.5',
-};
-
-const estilo = ({ bg = '#733' }) => ({
-  backgroundColor: bg,
-  color: '#fff',
-  padding: '10px 15px',
-  margin: '10px 15px'
-});
-
-const Li = () => {
-  return (
-    // <li style={{ ...estilo2, ...estilo({ bg: "#533" }) }} className='clase-li'>valor de Li</li>
-    <li className='clase-li'>valor de Li</li>
-
-  )
-}
+import Button from './button'
 
 const App = () => {
-  const valor = 'medio medio'
-  return (
-    //<ul style={estilo({ bg: '#050' })} className="clase-css">
-    <ul className="clase-css">
-
-      <Li></Li>
-    </ul>
-  );
+    return (
+        <div>
+            <h1> Hola mundo</h1>
+            <Button onClick={() => console.log('Clickeado')} >Enviar2</Button>
+        </div>
+    )
 }
 
-export default App;
+export default App
