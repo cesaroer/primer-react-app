@@ -39,6 +39,13 @@ import { Component } from 'react'
 
 class App extends Component {
 
+    state = {
+        productos: [
+            { name: 'Tomate', price: 1500, img: 'prodctos/tomate.jpg' },
+            { name: 'Chocharos', price: 2500, img: 'prodctos/arbejas.jpg' },
+            { name: 'Lechuga', price: 500, img: 'prodctos/lechuga.jpg' },
+        ]
+    }
 
     render() {
         console.log(this.state)
